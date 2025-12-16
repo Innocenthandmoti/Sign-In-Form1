@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Form Design</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styleIntro.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/light/style.css"
+    />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <section class="intro">
+        <h1 class="intro__title">Learn to code by watching others</h1>
+
+        <p class="intro__subtitle">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </section>
+      <main class="form__block">
+        <button class="try__free--btn" type="button">
+          <span>Try it free 7 days</span> then $20/mo. thereafter
+        </button>
+        <div class="form__cont">
+          <form class="form__box" novalidate>
+            <div class="form__input">
+              <input
+                type="text"
+                class="input__field"
+                id="first__name"
+                name="first__name"
+                placeholder="First Name"
+              />
+              <i class="ph ph-warning-circle error-icon"></i>
+              <!-- Phosphor warning icon -->
+              <p class="error__msg visually__hidden" aria-live="polite"></p>
+            </div>
+            <div class="form__input">
+              <input
+                type="text"
+                class="input__field"
+                id="last__name"
+                name="last__name"
+                placeholder="Last Name"
+              />
+              <i class="ph ph-warning-circle error-icon"></i>
+              <!-- Phosphor warning icon -->
+              <p class="error__msg visually__hidden" aria-live="polite"></p>
+            </div>
+            <div class="form__input">
+              <input
+                type="text"
+                class="input__field"
+                id="email"
+                name="email"
+                placeholder="Email Address"
+              />
+              <i class="ph ph-warning-circle error-icon"></i>
+              <!-- Phosphor warning icon -->
+              <p class="error__msg visually__hidden" aria-live="polite"></p>
+            </div>
+            <div class="form__input">
+              <input
+                type="text"
+                class="input__field"
+                id="password"
+                name="password"
+                placeholder="Password"
+              />
+              <i class="ph ph-warning-circle error-icon"></i>
+              <!-- Phosphor warning icon -->
+              <p class="error__msg visually__hidden" aria-live="polite"></p>
+            </div>
+            <button class="btn free__claim--btn" type="submit">
+              Claim Your Free Trial
+            </button>
+            <p class="terms__text">
+              By clicking the button, you are agreeing to our
+              <a class="terms__services" href="#">Terms and Services</a>
+            </p>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
